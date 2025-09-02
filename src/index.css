@@ -13,7 +13,7 @@
 }
 
 @utility text-1{
-    @apply text-[5rem] lg:text-[9rem]
+    @apply text-[5rem] md:text-[9rem]
 }
 
 @utility text-2{

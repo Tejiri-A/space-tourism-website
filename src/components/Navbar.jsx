@@ -5,7 +5,7 @@ import hamburger from "../assets/shared/icon-hamburger.svg";
 import Sidebar from "./Sidebar.jsx";
 
 import { AnimatePresence } from "motion/react";
-import { navlinks } from "../data.js";
+import { navLinks } from "../constants.js";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -39,7 +39,7 @@ const Navbar = () => {
         <div
           className={` hidden bg-white/5 background-blur-xl md:grid grid-cols-[repeat(4,min-content)]  justify-end  gap-x-8 px-10 lg:-ml-16 `}
         >
-          {navlinks.map(({ id, label, number, route }, index) => (
+          {navLinks.map(({ id, label, number, route }, index) => (
             <NavLink
               to={route}
               key={id}

@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import close from "../assets/shared/icon-close.svg";
-import { navlinks } from "../data.js";
+import { navLinks } from "../constants.js";
 import { NavLink } from "react-router";
 import { motion } from "motion/react";
 
@@ -26,7 +26,7 @@ const Sidebar = ({ toggle }) => {
   return (
     <motion.aside
       {...framerSideBar}
-      className={`fixed top-0 right-0 bottom-0 h-full w-[70vw] bg-blue-900/15 backdrop-blur-xl pl-8 flex flex-col gap-12`}
+      className={`fixed z-10 top-0 right-0 bottom-0 h-full w-[70vw] bg-blue-900/15 backdrop-blur-xl pl-8 flex flex-col gap-12`}
       ref={sideBarRef}
     >
       <div className={`py-8 flex items-center justify-end pr-8`}>
@@ -35,7 +35,7 @@ const Sidebar = ({ toggle }) => {
         </button>
       </div>
       <ul className={`space-y-8`}>
-        {navlinks.map(({ id, label, number, route }) => (
+        {navLinks.map(({ id, label, number, route }) => (
           <li key={id}>
             <NavLink
               to={route}

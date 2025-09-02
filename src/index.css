@@ -51,3 +51,22 @@
     @apply text-[0.9375rem] md:text-base lg:text-[1.125rem] leading-[1.8em] font-barlow
 }
 
+@utility bg-main{
+    @apply bg-cover bg-center bg-no-repeat
+}
+
+@utility bg-home{
+    @apply bg-[url('./assets/home/background-home-mobile.jpg')] md:bg-[url('./assets/home/background-home-tablet.jpg')] lg:bg-[url('./assets/home/background-home-desktop.jpg')];
+}
+
+@utility bg-destination{
+    @apply bg-[url('./assets/destination/background-destination-mobile.jpg')] md:bg-[url('./assets/destination/background-destination-tablet.jpg')] lg:bg-[url('./assets/destination/background-destination-desktop.jpg')];
+}
+
+@utility bg-crew{
+    @apply bg-[url('./assets/crew/background-crew-mobile.jpg')] md:bg-[url('./assets/crew/background-crew-tablet.jpg')] lg:bg-[url('./assets/crew/background-crew-desktop.jpg')];
+}
+
+@utility bg-technology{
+    @apply bg-[url('./assets/technology/background-technology-mobile.jpg')] md:bg-[url('./assets/technology/background-technology-tablet.jpg')] lg:bg-[url('./assets/technology/background-technology-desktop.jpg')];
+}

@@ -12,3 +12,13 @@ export const pageTransition = {
   animate: { opacity: 1 },
   exit: { opacity: 0.8 },
 };
+export const contentTransition = {
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0, transition: { delay: 0.2, duration: 0.6 } },
+  exit: { opacity: 0, y: -20 },
+};
+export const tabContentTransition = {
+  initial: { opacity: 0, y: 10 },
+  animate: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  exit: { opacity: 0, y: -10 },
+};

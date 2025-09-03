@@ -32,7 +32,7 @@
 }
 
 @utility text-6{
-    @apply text-base  lg:text-[1.75rem]
+    @apply text-[1.75rem]
 }
 
 @utility text-7{
@@ -40,11 +40,11 @@
 }
 
 @utility text-8{
-    @apply text-[0.875rem]  lg:text-base tracking-[0.125rem] font-barlow-condensed
+    @apply text-[0.875rem]  md:text-base tracking-[0.125rem] font-barlow-condensed
 }
 
 @utility text-8-bold{
-    @apply text-[0.875rem]  lg:text-base tracking-[0.125rem] font-barlow-condensed font-bold
+    @apply text-[0.875rem]  md:text-base tracking-[0.125rem] font-barlow-condensed font-bold
 }
 
 @utility text-9{

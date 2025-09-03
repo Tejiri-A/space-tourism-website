@@ -7,7 +7,7 @@ import { AppProvider } from "./contexts/AppContext.jsx";
 function App() {
   // To be removed later
   useEffect(() => {
-    document.body.className = `bg-blue-900`;
+    document.body.className = `bg-blue-900 overflow-hidden`;
   }, []);
 
   return (
